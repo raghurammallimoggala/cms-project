@@ -1,0 +1,12 @@
+get http://localhost:3000/api/contents/
+
+### 
+put http://localhost:3000/api/contents/1
+Content-Type :application/json 
+
+{
+    "title": "Update content "
+}
+
+### 
+delete http://localhost:3000/api/contents/1

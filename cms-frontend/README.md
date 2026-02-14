@@ -107,11 +107,17 @@ Frontend: cms-frontend
 
 ## API's
 
-    - POST  http://localhost:3000/api/contents -create content
+    - POST  https://cms-backend-lr46.onrender.com/api/contents -create content
 
-    - GET   http://localhost:3000/api/contents - all content
+    - GET   https://cms-backend-lr46.onrender.com/api/contents - all content
 
-    - PUT   http://localhost:3000/api/contents/:id - update content
+    - PUT   https://cms-backend-lr46.onrender.com/api/contents/:id - update content
 
-    - DELETE http://localhost:3000/api/contents/:id - delete content
+    - DELETE https://cms-backend-lr46.onrender.com/api/contents/:id - delete content
 
+## Render Deploy:
+   - https://cms-backend-lr46.onrender.com 
+
+
+## Vercel Deploy:
+   - https://cms-project-rouge.vercel.app

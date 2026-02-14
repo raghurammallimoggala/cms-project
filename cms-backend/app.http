@@ -1,7 +1,7 @@
-get http://localhost:3000/api/contents/
+get https://cms-backend-lr46.onrender.com/api/contents/
 
 ### 
-put http://localhost:3000/api/contents/1
+put https://cms-backend-lr46.onrender.com/api/contents/1
 Content-Type :application/json 
 
 {
@@ -9,4 +9,4 @@ Content-Type :application/json
 }
 
 ### 
-delete http://localhost:3000/api/contents/1
+delete https://cms-backend-lr46.onrender.com/api/contents/1

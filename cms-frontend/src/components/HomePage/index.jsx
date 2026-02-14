@@ -8,7 +8,7 @@ function HomePage(){
 
   const fetchContents= async()=>{
   try{
-    const res= await fetch("http://localhost:3000/api/contents");
+    const res= await fetch("https://cms-backend-lr46.onrender.com/api/contents");
     const data= await res.json();
     setContents(data);
     }catch(error){
@@ -22,7 +22,7 @@ function HomePage(){
 
   const handleDelete= async(id)=>{
     try{
-      const res=await fetch(`http://localhost:3000/api/contents/${id}`,
+      const res=await fetch(`https://cms-backend-lr46.onrender.com/api/contents/${id}`,
         {
           method:"Delete",
         }
@@ -52,7 +52,7 @@ function HomePage(){
       formData.append("image", editedImage);
     }
 
-    const res= await fetch(`http://localhost:3000/api/contents/${editId}`,
+    const res= await fetch(`https://cms-backend-lr46.onrender.com/api/contents/${editId}`,
       {
         method:"PUT",
         body:formData,
@@ -97,7 +97,7 @@ function HomePage(){
         {contents.map((item)=>(
       <div key={item.id} className="border p-4 rounded-lg shadow">
         <h1 className="text-xl font-bold">{item.title}</h1>
-      <img src={`http://localhost:3000/uploads/${item.image}`} alt={item.title} className="w-full h-70 object-cover rounded-lg mt-3"/>
+      <img src={`https://cms-backend-lr46.onrender.com/uploads/${item.image}`} alt={item.title} className="w-full h-70 object-cover rounded-lg mt-3"/>
       <div className="flex justify-center gap-4 mt-4">
         <button type= "button" className="bg-yellow-500 text-white px-2 py-2 rounded" onClick={()=>handleEdit(item)}>Edit</button>
         <button type="button" className="bg-red-500 text-white px-2 py-2 rounded" onClick={()=>handleDelete(item.id)}>Delete</button>

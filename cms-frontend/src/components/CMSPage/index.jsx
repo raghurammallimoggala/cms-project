@@ -16,7 +16,7 @@ function CMSPage (){
         const formData=new FormData();
         formData.append("title", title);
         formData.append("image", image);
-        const res= await fetch("http://localhost:3000/api/contents",{
+        const res= await fetch("https://cms-backend-lr46.onrender.com/api/contents",{
             method:"POST",
             body:formData
         });
